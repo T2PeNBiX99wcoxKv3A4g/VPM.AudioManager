@@ -46,7 +46,7 @@
       }
     },
     "io.github.ykysnk.world-basic": {
-      "version": "0.1.1",
+      "version": "0.1.3",
       "dependencies": {
         "com.vrchat.worlds": ">=3.9.0",
         "io.github.ykysnk.cheat-client-protector": ">=0.2.0",
@@ -58,7 +58,7 @@
       "dependencies": {}
     },
     "io.github.ykysnk.log-manager": {
-      "version": "0.1.4",
+      "version": "0.1.6",
       "dependencies": {
         "com.vrchat.worlds": ">=3.9.0",
         "io.github.ykysnk.cheat-client-protector": ">=0.2.0",
