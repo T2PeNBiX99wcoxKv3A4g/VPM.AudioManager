@@ -11,12 +11,12 @@ namespace io.github.ykysnk.AudioManager
     [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
     public class SimpleAudioInstance : BasicUdonSharpBehaviour
     {
-        [HideInInspector] public int index;
-        [HideInInspector] public bool isPlaying;
-        [HideInInspector] public bool isChilded;
-        [HideInInspector] public float startTime;
-        [HideInInspector] public float clipLength;
-        [HideInInspector] public SimpleAudioPlayer audioPlayer;
+        public int index;
+        public bool isPlaying;
+        public bool isChilded;
+        public float startTime;
+        public float clipLength;
+        public SimpleAudioPlayer audioPlayer;
 
         private AudioSource _source;
 

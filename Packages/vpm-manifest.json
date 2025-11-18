@@ -14,6 +14,9 @@
     },
     "io.github.ykysnk.log-manager": {
       "version": "0.1.4"
+    },
+    "blueamulet.udonsharpoptimizer": {
+      "version": "1.0.12"
     }
   },
   "locked": {
@@ -73,6 +76,12 @@
       "version": "0.3.0",
       "dependencies": {
         "com.vrchat.base": ">=3.9.0"
+      }
+    },
+    "blueamulet.udonsharpoptimizer": {
+      "version": "1.0.12",
+      "dependencies": {
+        "com.vrchat.worlds": "^3.4.2"
       }
     }
   }

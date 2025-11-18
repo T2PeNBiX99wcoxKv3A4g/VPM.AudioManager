@@ -16,7 +16,7 @@ namespace io.github.ykysnk.AudioManager
 
         public GameObject audioPrefab;
         public int sourceCount = 12;
-        [HideInInspector] public SimpleAudioInstance[] instances;
+        public SimpleAudioInstance[] instances;
 
         private int _lastPlayedIndex = -1;
 
