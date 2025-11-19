@@ -27,7 +27,7 @@ namespace io.github.ykysnk.AudioManager
             gameObject.SetActive(false);
         }
 
-        public bool PlaySound(AudioClip clip, Vector3 position, int key, float maxDistance = 32, float volume = 1,
+        public bool PlaySound(int key, AudioClip clip, Vector3 position, float maxDistance = 32, float volume = 1,
             float pitch = 1)
         {
             if (!IsKeyCorrect(key)) return false;

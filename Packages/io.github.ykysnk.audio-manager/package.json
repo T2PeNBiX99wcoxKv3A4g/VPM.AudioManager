@@ -1,7 +1,7 @@
 {
   "name": "io.github.ykysnk.audio-manager",
   "displayName": "Audio Manager",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Audio manager for worlds.",
   "gitDependencies": {},
   "vpmDependencies": {

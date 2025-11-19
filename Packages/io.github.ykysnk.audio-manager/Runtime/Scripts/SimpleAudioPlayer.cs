@@ -35,7 +35,7 @@ namespace io.github.ykysnk.AudioManager
             }
         }
 
-        public SimpleAudioInstance PlaySoundChilded(AudioClip clip, Transform parent, Vector3 position, int key,
+        public SimpleAudioInstance PlaySoundChilded(int key, AudioClip clip, Transform parent, Vector3 position,
             float maxDistance = DefaultDistance, float volume = 1, float pitch = 1)
         {
             if (!IsKeyCorrect(key)) return null;
@@ -43,12 +43,12 @@ namespace io.github.ykysnk.AudioManager
             if (!Utilities.IsValid(instance)) return null;
 
             instance.ChildTo(parent, instance.RandomKey);
-            instance.PlaySound(clip, position, instance.RandomKey, maxDistance, volume, pitch);
+            instance.PlaySound(instance.RandomKey, clip, position, maxDistance, volume, pitch);
 
             return instance;
         }
 
-        public SimpleAudioInstance PlaySound([CanBeNull] AudioClip[] clips, Vector3 position, int key,
+        public SimpleAudioInstance PlaySound(int key, [CanBeNull] AudioClip[] clips, Vector3 position,
             float maxDistance = DefaultDistance, float volume = 1, float pitch = 1)
         {
             if (!IsKeyCorrect(key)) return null;
@@ -60,11 +60,11 @@ namespace io.github.ykysnk.AudioManager
 
             var clip = clips[Random.Range(0, clips.Length)];
 
-            var instance = PlaySound(clip, position, RandomKey, maxDistance, volume, pitch);
+            var instance = PlaySound(RandomKey, clip, position, maxDistance, volume, pitch);
             return instance;
         }
 
-        public SimpleAudioInstance PlaySound([CanBeNull] AudioClip clip, Vector3 position, int key,
+        public SimpleAudioInstance PlaySound(int key, [CanBeNull] AudioClip clip, Vector3 position,
             float maxDistance = DefaultDistance, float volume = 1, float pitch = 1)
         {
             if (!IsKeyCorrect(key)) return null;
@@ -77,7 +77,7 @@ namespace io.github.ykysnk.AudioManager
             var instance = TryGetSource();
             if (!Utilities.IsValid(instance)) return null;
 
-            return instance.PlaySound(clip, position, instance.RandomKey, maxDistance, volume, pitch)
+            return instance.PlaySound(instance.RandomKey, clip, position, maxDistance, volume, pitch)
                 ? instance
                 : null;
         }
