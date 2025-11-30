@@ -10,8 +10,8 @@ public class SimpleAudioPlayerEditor : BasicEditor
     private const string AudioPrefabProp = "audioPrefab";
     private const string SourceCountProp = "sourceCount";
 
-    private SerializedProperty? _guid;
     private SerializedProperty? _audioPrefab;
+    private SerializedProperty? _guid;
     private SerializedProperty? _sourceCount;
 
     protected override void OnEnable()
