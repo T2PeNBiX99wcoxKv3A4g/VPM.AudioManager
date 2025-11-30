@@ -20,8 +20,6 @@ namespace io.github.ykysnk.AudioManager
 
         private int _lastPlayedIndex = -1;
 
-        protected override bool LogShowFullName => false;
-
         public void Update()
         {
             foreach (var instance in instances)

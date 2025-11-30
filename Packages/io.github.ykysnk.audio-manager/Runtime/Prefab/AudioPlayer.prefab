@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 565245279697237199}
-  - component: {fileID: 8073185194030035199}
   - component: {fileID: 6248746671573528681}
   - component: {fileID: 3388446271686061433}
   m_Layer: 0
@@ -34,20 +33,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8073185194030035199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5435283610190008941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74db07bba473436c8704b90ccb2df424, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id:
-    value: b4358f31-1afc-4076-a70a-3ab13143a8df
 --- !u!114 &6248746671573528681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,10 +55,13 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 3388446271686061433}
-  id: b4358f31-1afc-4076-a70a-3ab13143a8df
+  guid: 12a2fc22-92f1-4534-ad1f-b482df02c4de
   playerGuid: {fileID: 0}
   logManager: {fileID: 0}
   logName: SimpleAudioPlayer
+  loopFreamRate: 60
+  logShowFullName: 1
+  logNameColor: '#D771C0'
   audioPrefab: {fileID: 9214847228124299847, guid: 49585b6c90117594295ef050e313c5ef,
     type: 3}
   sourceCount: 12
@@ -97,7 +85,7 @@ MonoBehaviour:
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
   Reliable: 0
-  _syncMethod: 0
+  _syncMethod: 1
   serializedProgramAsset: {fileID: 11400000, guid: f3de6325a3ddf52479719e7148d810f8,
     type: 2}
   programSource: {fileID: 11400000, guid: 63d8d407984f616498b2f957642ad713, type: 2}
